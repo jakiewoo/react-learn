@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import Topics from './components/topics';
 
+// Add these lines:
+if (process.env.NODE_ENV !== 'production') {
+  localStorage.setItem('debug', 'awesome-react-app:*');
+}
+
 const App = () => (
   <Router>
     <div>

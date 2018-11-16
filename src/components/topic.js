@@ -1,2 +1,31 @@
 import React from "react";
-export default ({ match }) => <h3>Requested Param: {match.params.id}</h3>;
+import log from '../utils/Log';
+export default class Topic extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    componentWillMount() {
+        log.info('Topic component will mount!', 'topic')
+    }
+    componentDidMount() {
+        log.info('Topic component did mount!', 'topic');
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        log.info('component did update', 'topic');
+    }
+
+    componentWillUnmount() {
+        log.info('component will unmount');
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        log.info('component should update')
+        return false;
+    }
+
+    render() {
+        return (<div>topic</div>);
+    }
+}
