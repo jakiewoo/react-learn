@@ -3,6 +3,7 @@ import log from '../utils/Log';
 export default class Topic extends React.Component {
     constructor(props) {
         super(props);
+        log.info(this.state)
     }
 
     componentWillMount() {
