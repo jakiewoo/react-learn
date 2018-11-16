@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-import Topics from './components/topics';
+import TopicList from './components/TopicList';
 import ToDoList from './components/ToDoList';
 
 // Add these lines:
@@ -16,7 +16,7 @@ const App = () => (
 
       <Route exact path="/" component={Home} />
       <Route path="/toDoList" component={ToDoList} />
-      <Route path="/topics" component={Topics} />
+      <Route path="/topics" component={TopicList} />
     </div>
   </Router>
 );

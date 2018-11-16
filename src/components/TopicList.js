@@ -1,8 +1,8 @@
-import Topic from './topic';
+import Topic from './Topic';
 import React from "react";
 import { Route, Link } from "react-router-dom";
 
-const Topics = ({ match }) => (
+const TopicList = ({ match }) => (
     <div>
       <h2>Topics</h2>
   
@@ -24,4 +24,4 @@ const Topics = ({ match }) => (
     </div>
   );
 
-  export default Topics;
+  export default TopicList;
